@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Project 6 [Kasa]
+![image de présentaion](https://user.oc-static.com/upload/2022/06/24/16560899769906_FR_811_P8_Banner-Kasa%20%281%29.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kasa is recruiting me as a freelance front-end developer to develop its new web platform.Kasa has been in the private apartment rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leading apartment rental companies in France.
 
-## Available Scripts
+The Kasa site was coded over 10 years ago in ASP.NET, with a significant legacy code base. So Laura, the CTO, launched a complete overhaul to move to a full JavaScript stack with NodeJS on the back-end, and React on the front-end. Kasa also took the opportunity to commission new mock-ups from its regular freelance designer.
 
-In the project directory, you can run:
 
-### `npm start`
+## **Objective**
+Start the React project and develop the entire application, the React components, the React Router routes, following the Figma mockups (responsives!), taking into account the technical constraints and all the information provided by the CTO.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  **Additional information**
 
-### `npm test`
+* ### **Back-end** / **data**: 
+Recruitment of the person in charge of the back-end is not yet complete and will take longer than expected. So I'll have to do without for the time being. I've been given the last 20 housing ads in this [JSON file](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json) so that I can build the corresponding front-end.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* ### **Technical constraints** : 
+ Kasa's coding guidelines at this [link](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P8+React+Kasa/Kasa+coding+guidelines+-+IW+-+DW.pdf). The company usually uses create react app to **create React applications**. All CSS styles must be coded using **Sass**.
 
-### `npm run build`
+ * ### **Design** 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ link to [figma models](https://www.figma.com/file/qEno0LwL4ZLkWyeY59kxp1/UI-Design-Kasa-FR?type=design&node-id=0-1&mode=design) and [site prototypes](https://www.figma.com/proto/qEno0LwL4ZLkWyeY59kxp1/UI-Design-Kasa-FR?type=design&node-id=3-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=3%3A0&show-proto-sidebar=1).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ ---
+ # Results
+ [**coming soon**]
