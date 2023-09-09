@@ -1,4 +1,6 @@
-@import 'src/styles/setting.scss'; //pour importer nos variables
+@import 'src/styles/utils/_variables.scss';//pour importer nos variables
+@import 'src/styles/utils/_mixins.scss';// pour impoter les mixins
+ 
 
 
 body {
