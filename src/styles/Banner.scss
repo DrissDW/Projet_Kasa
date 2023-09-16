@@ -1,0 +1,32 @@
+.banner {
+    background-image: url('../assets/Banner-image.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px; 
+    border-radius: 15px;
+    // provisoire
+    margin-bottom: 399px; 
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    .banner__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); 
+    //   border: 2px solid red;
+      border-radius: 15px;
+    }
+  
+    .banner__title {
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      padding: 20px;
+      font-weight: 300;
+    }
+  }
