@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './styles/index.scss';
 import App from './App';
+import Home from './components/Home/Home';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Error from './components/Error/Error';
 
 
 ReactDOM.render(
@@ -12,10 +16,8 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/survey/:questionNumber" element={<Survey />} />
         <Route path="*" element={<Error />} />
-        <Route path="/results" element={<Results />} />
-        <Route path="/freelances" element={<Freelances />} />
+        
           
          
         
