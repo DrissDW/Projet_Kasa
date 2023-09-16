@@ -1,0 +1,25 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    // padding: 20px;
+    height: 209px;
+    // border: 2px solid red;
+    
+    
+    &__logo {
+     img {
+        max-width: 190px;
+        margin-top: 40px;
+     }  
+    }
+
+   
+    &__rights {
+      font-size: 16px;
+      margin-top: 20px; 
+    }
+  }
+  
+  
+  
