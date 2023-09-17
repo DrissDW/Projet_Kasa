@@ -33,9 +33,16 @@
             color: red;
             margin-right: 30px;
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            
+
 
             &:hover {
                 text-decoration: underline; 
+              }
+
+              &:active,
+              &.clicked { /* Ajoutez cette classe pour les liens cliqués */
+                text-decoration: underline;
               }
           }
         }
