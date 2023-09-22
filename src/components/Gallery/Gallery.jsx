@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/Gallery.scss';
+import { Link } from 'react-router-dom';
 
 function Gallery() {
   const [logements, setLogements] = useState([]);
@@ -19,13 +20,14 @@ function Gallery() {
 
   return (
     <div className="gallery">
-      <h1>GALLERY</h1>
+    
       <div className="logement-container">
         {logements.length > 0 ? (
           logements.map((logement, index) => (
             <div className="logement" key={index}>
-              <p className="logement-title">{logement.title}</p>
-              
+              <Link to={`/logement/${logement.id}`}> 
+                <p className="logement-title">{logement.title}</p>
+              </Link>
             </div>
           ))
         ) : (
@@ -35,6 +37,7 @@ function Gallery() {
     </div>
   );
 }
+
 
 export default Gallery;
 
