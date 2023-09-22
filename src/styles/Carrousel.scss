@@ -1,0 +1,47 @@
+/* Carrousel container */
+.carrousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  /* Carrousel image */
+  .carrousel-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Pagination container */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Pagination dot */
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #007bff; /* Couleur du point actif */
+    cursor: pointer;
+  }
+  
+  /* Styles pour le bouton de changement d'image (gauche/droite) */
+  .carrousel-button {
+    font-size: 24px;
+    color: #007bff; /* Couleur de la flèche */
+    cursor: pointer;
+  }
+  
+  /* Styles pour la description du logement */
+  .logement-description {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+
+  
