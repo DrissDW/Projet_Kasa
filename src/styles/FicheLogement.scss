@@ -1,0 +1,37 @@
+/* FicheLogement container */
+.fiche-logement {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Titre du logement */
+  .logement-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Description du logement */
+  .logement-description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Retour au bouton de la galerie */
+  .return-button {
+    margin-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #007bff; /* Couleur du lien */
+    cursor: pointer;
+  }
+  
+  /* Style pour les erreurs, si nécessaire */
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
