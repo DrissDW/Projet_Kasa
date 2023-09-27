@@ -6,24 +6,30 @@
     background-color: white;
     color: rgb(255,96,96);
     text-align: center;
-    //  border: 2px solid red;
+    // border: 2px solid red;
+    padding-top: 180px;
+    
     
   
-    .error__title {
-      font-size: 290px; 
-      margin-bottom: 20px;
+    .error__logo {
+      width: 625px;
+      height: 263px;
+      margin-bottom: 95px;
       color: rgb(255,96,96);
+      // border: 2px solid red;
+      
     }
   
     .error__message {
-      font-size: 30px; 
-      margin-bottom: 20px;
+      font-size: 35px; 
+      margin-bottom: 150px;
     }
   
     .error__link {
       text-decoration: underline;
       color: rgb(255,96,96);
       margin-bottom: 150px;
+      font-size: 18px;
     }
   }
   
