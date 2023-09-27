@@ -6,11 +6,10 @@ function Gallery() {
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    // requête pour charger le fichier JSON 
+    // Requête pour charger le fichier JSON
     fetch('/data/logementsList.json')
       .then((response) => response.json())
       .then((data) => {
-       
         setLogements(data);
       })
       .catch((error) => {
@@ -20,15 +19,22 @@ function Gallery() {
 
   return (
     <div className="gallery">
-    
       <div className="logement-container">
         {logements.length > 0 ? (
           logements.map((logement, index) => (
-            <div className="logement" key={index}>
-              <Link to={`/logement/${logement.id}`}> 
-                <p className="logement-title">{logement.title}</p>
-              </Link>
-            </div>
+            <Link to={`/logement/${logement.id}`} key={index} className="logement">
+              <div
+                className="logement-cover"
+                style={{
+                  backgroundImage: `url(${logement.cover})`
+                  
+                }}
+              >
+                <div className="logement-title-container">
+                  <p className="logement-title">{logement.title}</p>
+                </div>
+              </div>
+            </Link>
           ))
         ) : (
           <p>Aucun logement n'a été trouvé.</p>
@@ -38,6 +44,6 @@ function Gallery() {
   );
 }
 
-
 export default Gallery;
+
 
