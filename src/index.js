@@ -7,6 +7,7 @@ import FicheLogement from './pages/FicheLogement';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Error from './pages/Error.jsx';
+import About from './pages/About';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -16,7 +17,8 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/logement/:id" element={<FicheLogement />} /> 
+        <Route path="/logement/:id" element={<FicheLogement />} />
+        <Route path="/a-propos" element={<About />} /> 
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
