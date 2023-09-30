@@ -1,29 +1,46 @@
 
 .collapse {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    // border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
     overflow: hidden;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(253,96,102);
+  }
+  
+  .collapse-header {
+    padding: 5px;
+    // border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    
+   
+    
+    
+    
   }
   
   .collapse-button {
-    background-color: red;
-    color: #333;
+    background-color: rgb(253,96,102);
+    color: white;
     border: none;
     width: 50px;
-    // text-align: right;
+     text-align: right;
     padding: 10px 20px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
-    // outline: none;
+     align-items: center;
+     outline: none;
     transition: background-color 0.3s ease;
   }
   
-  .collapse-button:hover {
-    background-color: #e0e0e0;
-  }
+  // .collapse-button:hover {
+  //   background-color: #e0e0e0;
+  // }
   
   .arrow-icon {
     font-size: 20px;
@@ -38,6 +55,11 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+    background-color: #f9f9f9;
+    font-size: 24px;
+    // border: 2px solid green;
+    color: rgb(253,96,102);
+    padding: 20px;
   }
   
   .open .collapse-content {
