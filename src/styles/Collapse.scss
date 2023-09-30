@@ -1,81 +1,69 @@
-
 .collapse {
-    // border: 1px solid #ccc;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    margin-left: 150px;
-    margin-right: 150px;
-    background-color: rgb(253,96,102);
-  }
+  border-radius: 6px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: #f9f9f9;
+}
+
+.collapse-header {
+  background-color: rgb(253, 96, 102);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 24px;
+}
+
+.collapse-button {
+  background-color: rgb(253, 96, 102);
+  color: white;
+  border: none;
+  width: 50px;
+  text-align: right;
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  transition: background-color 0.3s ease, max-height 0.3s ease, padding 0.1s ease; /* Réduction de la durée de la transition du padding */
+}
+
+.collapse-button.open {
+  background-color: rgb(253, 96, 102);
+}
+
+.arrow-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  font-size: 20px;
+  color: rgb(253, 96, 102);
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease, margin 0.3s ease; /* Ajouter margin à l'animation */
+  margin: 0px 18px; /* résolution du problème de saccade à la fermeture */
   
-  .collapse-header {
-    padding: 5px;
-    // border: 2px solid blue;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-size: 24px;
-    
-   
-    
-    
-    
-  }
-  
-  .collapse-button {
-    background-color: rgb(253,96,102);
-    color: white;
-    border: none;
-    width: 50px;
-     text-align: right;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-     align-items: center;
-     outline: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  // .collapse-button:hover {
-  //   background-color: #e0e0e0;
-  // }
-  
-  .arrow-icon {
-    font-size: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  .open .arrow-icon {
-    transform: rotate(180deg);
-  }
-  
-  .collapse-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    background-color: #f9f9f9;
-    font-size: 24px;
-    // border: 2px solid green;
-    color: rgb(253,96,102);
-    padding: 20px;
-  }
-  
-  .open .collapse-content {
-    max-height: 1000px; /* Utilisez une valeur suffisamment grande pour afficher tout le contenu */
-  }
-  
-  .content-inner {
-    padding: 15px 20px;
-    background-color: #f9f9f9;
-    transition: opacity 0.3s ease;
-  }
-  
-  .open .content-inner {
-    opacity: 1;
-  }
-  
+}
+
+.open .collapse-content {
+  max-height: 1000px; 
+  opacity: 1;
+  margin: 10px 10px 18px 18px; /* résolution du problème de saccade à la fermeture */
+}
+
+
+
+
   
   
   
