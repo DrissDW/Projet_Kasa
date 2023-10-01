@@ -5,7 +5,7 @@ import Gallery from '../components/Gallery/Gallery.jsx'
 function Home() {
   return (
     <div className="home">
-      <Banner /> 
+      <Banner page="home" />
       <Gallery />
       
     </div>
