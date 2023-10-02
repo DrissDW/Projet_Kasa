@@ -1,47 +1,79 @@
-/* Carrousel container */
+// Carrousel container 
 .carrousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+//  border: 2px solid red;
+  width: 1240px; 
+  height: 500px;
+  position: relative; 
+  overflow: hidden; 
+}
+
+/* Carrousel image container */
+.carrousel-image-container {
+  border-radius: 12px;
+  display: relative;
+  // margin-bottom: 10px;
+  width: 100%;
+  height: 100%; 
+  z-index: 1; 
+  overflow: hidden; 
+}
+
+/* Carrousel image */
+.carrousel-image {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%; 
+  background-size: cover; 
+  // border: 2px solid green;
+}
+
+// Styles pour les boutons de changement d'image (gauche/droite) */
+.carrousel-button {
+  font-size: 90px;
+  color: white; 
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 2; 
+}
+
+.carrousel-button.left {
+ 
+  left: 10px;
+}
+
+.carrousel-button.right {
   
-  /* Carrousel image */
-  .carrousel-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Pagination container */
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  /* Pagination dot */
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 5px;
-    background-color: #007bff; /* Couleur du point actif */
-    cursor: pointer;
-  }
-  
-  /* Styles pour le bouton de changement d'image (gauche/droite) */
-  .carrousel-button {
-    font-size: 24px;
-    color: #007bff; /* Couleur de la flèche */
-    cursor: pointer;
-  }
-  
-  /* Styles pour la description du logement */
-  .logement-description {
-    margin-top: 20px;
-    text-align: center;
-  }
+  right: 10px;
+}
+
+// Styles pour la pagination 
+.pagination {
+  background-color: transparent;
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 2; /* Définition d'un z-index pour la pagination */
+}
+
+
+
+
+
   
 
   
