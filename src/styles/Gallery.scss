@@ -5,8 +5,8 @@
     gap: 20px;
     // border: 3px solid green;
     border-radius: 18px;
-    margin-left: 70px;
-    margin-right: 79px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 35px;
     padding-top: 45px;
     padding-left: 25px;
@@ -31,15 +31,15 @@
       .logement-cover {
         background-size: cover;
         background-position: center;
-        height: 340px; // Hauteur de la section de couverture
+        height: 340px; 
         width: 340px;
         position: relative;
         border-radius: 12px;
-        overflow: hidden; // Cela cache la partie de la cover en dehors du border-radius
+        overflow: hidden; 
         
         
 
-        // Appliquer le filtre en dégradé
+        // On applique le filtre en dégradé
         &:before {
           content: '';
           position: absolute;
