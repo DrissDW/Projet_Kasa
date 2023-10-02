@@ -32,8 +32,9 @@ function FicheLogement() {
     <div className="fiche-logement">
       {logement ? (
         <>
-          <h2>{logement.title}</h2>
           <Carrousel images={logement.pictures || [logement.picture]} />
+          <h2 className="fiche-logement-title">{logement.title}</h2>
+          <h3 className="fiche-logement-location">{logement.location}</h3>
           <p>{logement.description}</p>
         </>
       ) : (
