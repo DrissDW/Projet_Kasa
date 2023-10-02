@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Collapse from '../components/Collapse/Collapse';
-import Banner from '../components/Banner/Banner.jsx';  
+import Banner from '../components/Banner/Banner.jsx'; 
+import '../styles/About.scss'; 
 
 function About() {
     const [aboutData, setAboutData] = useState([]);
