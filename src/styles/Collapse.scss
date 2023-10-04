@@ -15,11 +15,11 @@
   color: white;
   font-size: 24px;
   padding: 12px;
+  cursor: default;
 }
 
 .collapse-button {
   background-color: rgb(253, 96, 102);
-  color: white;
   border: none;
   width: 50px;
   text-align: right;
@@ -32,19 +32,6 @@
   transition: background-color 0.3s ease, max-height 0.3s ease, padding 0.1s ease; /* Réduction de la durée de la transition du padding */
 }
 
-.collapse-button.open {
-  background-color: rgb(253, 96, 102);
-}
-
-.arrow-icon {
-  font-size: 20px;
-  transition: transform 0.3s ease;
-}
-
-.open .arrow-icon {
-  transform: rotate(180deg);
-}
-
 .collapse-content {
   max-height: 0;
   overflow: hidden;
@@ -53,7 +40,7 @@
   color: rgb(253, 96, 102);
   transition: max-height 0.2s ease-in-out, opacity 0.3s ease, margin 0.3s ease; /* Ajouter margin à l'animation */
   margin: 0px 18px; /* résolution du problème de saccade à la fermeture */
-  
+  cursor: default;
 }
 
 .open .collapse-content {
