@@ -19,12 +19,12 @@ function Carrousel({ images }) {
           <>
             <button className="carrousel-button left" onClick={prevImage}>{"<"}</button>
             <button className="carrousel-button right" onClick={nextImage}>{">"}</button>
+            <div className="pagination">{`${currentImage + 1}/${images.length}`}</div>
           </>
         )}
         {images.length > 0 && (
           <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} className="carrousel-image" />
         )}
-        <div className="pagination">{`${currentImage + 1}/${images.length}`}</div>
       </div>
     </div>
   );
