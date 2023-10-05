@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel/Carrousel";
+import Collapse from '../components/Collapse/Collapse';
 import "../../src/styles/FicheLogement.scss";
 import Error from "./Error.jsx";
 
@@ -35,7 +36,9 @@ function FicheLogement() {
           <Carrousel images={logement.pictures || [logement.picture]} />
           <h2 className="fiche-logement-title">{logement.title}</h2>
           <h3 className="fiche-logement-location">{logement.location}</h3>
-          <p>{logement.description}</p>
+
+          <Collapse title="Description" content={logement.description} />
+          <Collapse title="Equipements" content={logement.equipments} />
         </>
       ) : (
         <Error />
