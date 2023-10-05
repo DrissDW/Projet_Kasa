@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel/Carrousel";
-import Collapse from '../components/Collapse/Collapse';
+import Collapse from "../components/Collapse/Collapse";
 import "../../src/styles/FicheLogement.scss";
 import Error from "./Error.jsx";
 
@@ -34,11 +34,31 @@ function FicheLogement() {
       {logement ? (
         <>
           <Carrousel images={logement.pictures || [logement.picture]} />
-          <h2 className="fiche-logement-title">{logement.title}</h2>
-          <h3 className="fiche-logement-location">{logement.location}</h3>
+          <h1 className="fiche-logement-title">{logement.title}</h1>
+          <p className="fiche-logement-location">{logement.location}</p>
 
-          <Collapse title="Description" content={logement.description} />
-          <Collapse title="Equipements" content={logement.equipments} />
+          <div className="ficheLogement-collapse">
+            <div>
+              <Collapse
+                title="Description"
+                content={logement.description}
+                pageName="ficheLogement-description"
+              />
+            </div>
+            <div>
+              <Collapse
+                title="Équipements"
+                content={
+                  <ul>
+                    {logement.equipments.map((equipment, index) => (
+                      <li key={index}>{equipment}</li>
+                    ))}
+                  </ul>
+                }
+                pageName="ficheLogement-equipements"
+              />
+            </div>
+          </div>
         </>
       ) : (
         <Error />
