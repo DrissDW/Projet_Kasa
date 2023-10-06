@@ -9,19 +9,19 @@ function FicheLogement() {
   const { id: logementId } = useParams();
   const [logement, setLogement] = useState(null);
 
-  useEffect(() => {
-    // Chargement des données du logement depuis le fichier JSON
-    fetch(`${process.env.PUBLIC_URL}/data/logementsList.json`)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Logement ID:", logementId); // On vérifiez la valeur de logementId
-        console.log("Data:", data); // On vérifiez la structure de vos données
-        const selectedLogement = data.find((item) => item.id === logementId);
-
-        console.log("Selected Logement:", selectedLogement); // On vérifie les données du logement sélectionné
-        setLogement(selectedLogement);
-      })
-      .catch((error) => {
+    useEffect(() => {
+      // Chargement des données du logement depuis le fichier JSON
+      fetch(`${process.env.PUBLIC_URL}/data/logementsList.json`)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Logement ID:", logementId); // On vérifiez la valeur de logementId
+          console.log("Data:", data); // On vérifiez la structure de vos données
+          const selectedLogement = data.find((item) => item.id === logementId);
+  
+          console.log("Selected Logement:", selectedLogement); // On vérifie les données du logement sélectionné
+          setLogement(selectedLogement);
+        })
+        .catch((error) => {
         console.error(
           "Une erreur est survenue lors du chargement des données du logement :",
           error
@@ -36,6 +36,14 @@ function FicheLogement() {
           <Carrousel images={logement.pictures || [logement.picture]} />
           <h1 className="fiche-logement-title">{logement.title}</h1>
           <p className="fiche-logement-location">{logement.location}</p>
+
+          <div className="tags-container">
+            {logement.tags.map((tag, index) => (
+              <div key={index} className="tag">
+                {tag}
+              </div>
+            ))}
+          </div>
 
           <div className="ficheLogement-collapse">
             <div>
