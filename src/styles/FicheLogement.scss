@@ -48,7 +48,50 @@
     }
   }
   
+ 
+  // .host-circle {
+  //   width: 64px; 
+  //   height: 64px;
+  //   border-radius: 50%; 
+  //   display: flex;
+  //   border :2px solid black;
+  //   justify-content: center;
+  //   align-items: center;
+  //   overflow: hidden; 
+    
+  // }
+
+  .host{
+    display: flex;
+    align-content: center;
+    border: 2px solid red;
+  }
   
+  .host-picture {
+    width: 64px; 
+    height: 64px;
+    object-fit: contain; 
+    border-radius: 50%; 
+    align-items: center;
+    border: 2px solid orange;
+  }
+  
+  .host-name {
+    color: rgb(253, 96, 102); 
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid black;
+    align-items: center;
+    padding-top: 15px;
+    margin-right: 7px;
+    width: 70px;
+  }
+  
+  .title-location-host-container{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid blue;
+  }
  
   
 
