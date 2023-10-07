@@ -4,6 +4,32 @@ import Carrousel from "../components/Carrousel/Carrousel";
 import Collapse from "../components/Collapse/Collapse";
 import "../../src/styles/FicheLogement.scss";
 import Error from "./Error.jsx";
+import redStarImage from './../assets/red_star.png'; 
+import greyStarImage from './../assets/grey_star.png'; 
+
+// Fonction pour générer les étoiles en fonction du rating
+function generateStarRating(rating) {
+  const ratingStars = [];
+  const maxRating = 5;
+
+  for (let i = 1; i <= maxRating; i++) {
+    if (i <= rating) {
+      ratingStars.push(
+        <img key={i} src={redStarImage} alt="Étoile rouge"  />
+
+
+      );
+    } else {
+      ratingStars.push(
+        <img key={i} src={greyStarImage} alt="Étoile grise"  />
+
+
+      );
+    }
+  }
+
+  return ratingStars;
+}
 
 function FicheLogement() {
   const { id: logementId } = useParams();
@@ -34,25 +60,24 @@ function FicheLogement() {
       {logement ? (
         <>
           <Carrousel images={logement.pictures || [logement.picture]} />
-          
+
           <div className="title-location-host-container">
+            <div className="title-location-container">
+              <h1 className="fiche-logement-title">{logement.title}</h1>
+              <p className="fiche-logement-location">{logement.location}</p>
+            </div>
 
-          <div className="title-location-container">
-            <h1 className="fiche-logement-title">{logement.title}</h1>
-            <p className="fiche-logement-location">{logement.location}</p>
-          </div>
-
-          <div className="host">
-            <div className="host-name">{logement.host.name}</div>
-            <div className="host-circle">
-              <img
-                src={logement.host.picture}
-                alt={logement.host.name}
-                className="host-picture"
+            <div className="host">
+              <div className="host-name">{logement.host.name}</div>
+              <div className="host-circle">
+                <img
+                  src={logement.host.picture}
+                  alt={logement.host.name}
+                  className="host-picture"
                 />
+              </div>
             </div>
           </div>
-                </div>
 
           <div className="tags-container">
             {logement.tags.map((tag, index) => (
@@ -60,6 +85,12 @@ function FicheLogement() {
                 {tag}
               </div>
             ))}
+          </div>
+
+          <div className="rating-container">
+            <div className="star-rating">
+              {generateStarRating(parseInt(logement.rating))}
+            </div>
           </div>
 
           <div className="ficheLogement-collapse">
