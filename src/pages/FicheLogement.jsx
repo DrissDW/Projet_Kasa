@@ -4,8 +4,8 @@ import Carrousel from "../components/Carrousel/Carrousel";
 import Collapse from "../components/Collapse/Collapse";
 import "../../src/styles/FicheLogement.scss";
 import Error from "./Error.jsx";
-import redStarImage from './../assets/red_star.png'; 
-import greyStarImage from './../assets/grey_star.png'; 
+import redStarImage from "./../assets/red_star.png";
+import greyStarImage from "./../assets/grey_star.png";
 
 // Fonction pour générer les étoiles en fonction du rating
 function generateStarRating(rating) {
@@ -14,17 +14,9 @@ function generateStarRating(rating) {
 
   for (let i = 1; i <= maxRating; i++) {
     if (i <= rating) {
-      ratingStars.push(
-        <img key={i} src={redStarImage} alt="Étoile rouge"  />
-
-
-      );
+      ratingStars.push(<img key={i} src={redStarImage} alt="Étoile rouge" />);
     } else {
-      ratingStars.push(
-        <img key={i} src={greyStarImage} alt="Étoile grise"  />
-
-
-      );
+      ratingStars.push(<img key={i} src={greyStarImage} alt="Étoile grise" />);
     }
   }
 
@@ -79,17 +71,24 @@ function FicheLogement() {
             </div>
           </div>
 
-          <div className="tags-container">
-            {logement.tags.map((tag, index) => (
-              <div key={index} className="tag">
-                {tag}
-              </div>
-            ))}
-          </div>
+          <div className="tags-rating-container">
+            <div className="tags-container">
+              {logement.tags.map((tag, index) => (
+                <div key={index} className="tag">
+                  <p>{tag}</p>
+                </div>
+              ))}
+            </div>
 
-          <div className="rating-container">
-            <div className="star-rating">
-              {generateStarRating(parseInt(logement.rating))}
+            <div className="rating-container">
+              <div className="star-rating">
+                
+                {generateStarRating(parseInt(logement.rating)).map((star, index) => (
+                  <span key={index} className="star-image">
+                    {star}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
