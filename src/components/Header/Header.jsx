@@ -32,7 +32,7 @@ function Header() {
               className={`header__nav-link ${clickedLink === '/a-propos' ? 'clicked' : ''}`}
               onClick={() => handleLinkClick('/a-propos')}
             >
-              À Propos
+              A Propos
             </Link>
           </li>
         </ul>
