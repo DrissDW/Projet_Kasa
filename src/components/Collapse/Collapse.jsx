@@ -22,6 +22,8 @@ function Collapse({ title, content, pageName }) {
             style={{
               transform: `rotate(180deg) ${iconRotation}`,
               transition: 'transform 0.3s ease',
+              width:'70%',
+              height:'90%',
             }}
           />
         </button>
