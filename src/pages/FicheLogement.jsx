@@ -53,41 +53,41 @@ function FicheLogement() {
         <>
           <Carrousel images={logement.pictures || [logement.picture]} />
 
-          <div className="title-location-host-container">
-            <div className="title-location-container">
-              <h1 className="fiche-logement-title">{logement.title}</h1>
-              <p className="fiche-logement-location">{logement.location}</p>
-            </div>
-
-            <div className="host">
-              <div className="host-name">{logement.host.name}</div>
-              <div className="host-circle">
-                <img
-                  src={logement.host.picture}
-                  alt={logement.host.name}
-                  className="host-picture"
-                />
+          <div className="global-container">
+            <div className="title-location-tags-container">
+              <div className="title-location-container">
+                <h1 className="fiche-logement-title">{logement.title}</h1>
+                <p className="fiche-logement-location">{logement.location}</p>
+                <div className="tags-container">
+                  {logement.tags.map((tag, index) => (
+                    <div key={index} className="tag">
+                      <p>{tag}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="tags-rating-container">
-            <div className="tags-container">
-              {logement.tags.map((tag, index) => (
-                <div key={index} className="tag">
-                  <p>{tag}</p>
+            <div className="host-rating-container">
+              <div className="host">
+                <div className="host-name">{logement.host.name}</div>
+                <div className="host-circle">
+                  <img
+                    src={logement.host.picture}
+                    alt={logement.host.name}
+                    className="host-picture"
+                  />
                 </div>
-              ))}
-            </div>
-
-            <div className="rating-container">
-              <div className="star-rating">
-                
-                {generateStarRating(parseInt(logement.rating)).map((star, index) => (
-                  <span key={index} className="star-image">
-                    {star}
-                  </span>
-                ))}
+              </div>
+              <div className="rating-container">
+                <div className="star-rating"></div>
+                {generateStarRating(parseInt(logement.rating)).map(
+                  (star, index) => (
+                    <span key={index} className="star-image">
+                      {star}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           </div>
