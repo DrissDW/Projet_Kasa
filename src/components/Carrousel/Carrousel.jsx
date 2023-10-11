@@ -19,8 +19,13 @@ function Carrousel({ images }) {
       <div className="carrousel-image-container">
         {images.length > 1 && ( // Condition pour afficher les boutons et la pagination seulement s'il y a plus d'une image
           <>
-            <button className="carrousel-button left" onClick={prevImage}>{<img src={iconImageLeft} alt='boutton Left'></img>}</button>
-            <button className="carrousel-button right" onClick={nextImage}>{<img src={iconImageRight} alt='bouton Right'></img>}</button>
+            <button className="carrousel-button left" onClick={prevImage}>
+  <img src={iconImageLeft} alt="boutton Left" style={{ width: "70%", height:"90%", }} />
+</button>
+<button className="carrousel-button right" onClick={nextImage}>
+  <img src={iconImageRight} alt="bouton Right" style={{ width: "70%", height:"90%", }}/>
+</button>
+
             <div className="pagination">{`${currentImage + 1}/${images.length}`}</div>
           </>
         )}
