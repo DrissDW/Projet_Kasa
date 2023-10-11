@@ -14,14 +14,29 @@ function generateStarRating(rating) {
 
   for (let i = 1; i <= maxRating; i++) {
     if (i <= rating) {
-      ratingStars.push(<img key={i} src={redStarImage} alt="Étoile rouge" />);
+      ratingStars.push(
+        <img
+          key={i}
+          src={redStarImage}
+          alt="Étoile rouge"
+          className="red-star" //On Ajoute une classe "red-star" pour les étoiles rouges
+        />
+      );
     } else {
-      ratingStars.push(<img key={i} src={greyStarImage} alt="Étoile grise" />);
+      ratingStars.push(
+        <img
+          key={i}
+          src={greyStarImage}
+          alt="Étoile grise"
+          className="grey-star" //On Ajoute une classe "grey-star" pour les étoiles grises
+        />
+      );
     }
   }
 
   return ratingStars;
 }
+
 
 function FicheLogement() {
   const { id: logementId } = useParams();
