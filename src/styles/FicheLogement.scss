@@ -58,7 +58,7 @@
   .host {
     display: flex;
     align-items: center;
-    //  border: 2px solid red;
+    // border: 2px solid red;
     margin-bottom: 45px;
     // width: 150px;
     
@@ -96,29 +96,41 @@
       }
     }
   }
-  
-  .title-location-host-container{
+
+  .global-container {
+    // border: 4px solid green;
     display: flex;
     justify-content: space-between;
-      // border: 2px solid blue;
     margin-top: 25px;
   }
-
-  .tags-rating-container{
+  
+  .title-location-tags-container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: space-between;
+    // border: 2px solid blue;
+    
+  }
+
+  .host-rating-container{
+    // border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
     align-content: center;
   }
 
   .star-image {
-    //  border: 2px solid red;
+      // border: 2px solid red;
     
     margin-right: 4px; 
   }
  
   
 
- 
+ //RESPONSIVE MOBILE
+@media(max-width:768px){
+
+
+}
  
   
 
