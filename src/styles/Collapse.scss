@@ -154,7 +154,7 @@ p{
 .ficheLogement-collapse {
   display: flex;
   // border: 2px solid green;
-  justify-content: space-between;
+  // justify-content: space-between;
   max-width:1240px;
   margin-bottom: 10px;
   padding: 0;
@@ -172,7 +172,7 @@ p{
 
     .ficheLogement-description-collapse-content{
        // border: 2px solid black;
-      // width: 550px;
+       width: 550px;
        line-height: 165%;
       font-size: 20px;
 
@@ -198,7 +198,7 @@ p{
   .ficheLogement-equipements-collapse{
     //  border: 2px solid blue;
   //   min-width: 250px;
-   width: 570px;
+    width: 570px;
     margin-right: 0px;
     position :relative;
     margin-bottom: 35px;
@@ -238,7 +238,104 @@ p{
 }
 
 
+//RESPONSIVE MOBILE COLLAPSE PAGE FICHELOGEMENT
+@media(max-width:768px){
 
+  .ficheLogement-collapse {
+    display: flex;
+    // border: 2px solid green;
+   
+    width:335px;
+    margin-bottom: 10px;
+    padding: 0;
+    flex-direction: column;
   
+    
+    
+   
+  
+    .ficheLogement-description-collapse {
+      //  border: 2px solid blue;
+      margin-left: 0px;
+      margin-bottom: 20px;
+      width: 335px;
+      
+  
+  
+      .ficheLogement-description-collapse-content{
+        // border: 2px solid black;
+        width: 335px;
+        line-height: 165%;
+        font-size: 12px;
+         padding-right: 0px;
+         margin-left: 0px;
+        
+  
+        
+        
+       
+  
+      }
+  
+      p{
+        // border: 2px solid blue;
+        text-align:left;
+        width: 335px;
+        margin-left: 0px;
+        padding-left: 4px;
+        
+         padding-bottom: 0px;
+        
+        
+      }
+      
+     
+      
+    }
+  
+    
+  
+    .ficheLogement-equipements-collapse{
+      //  border: 2px solid blue;
+    //   min-width: 250px;
+     width: 335px;
+      margin-right: 0px;
+      position :relative;
+      margin-bottom: 27px;
+  
+      ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 5px;
+        // border: 2px solid pink;
+        
+  
+        li{
+          padding: 0px;
+        }
+        
+      }
+  
+      p{
+        //  border: 2px solid blue;
+        // padding-bottom: 0px;
+      }
+  
+      .ficheLogement-equipements-collapse-content{
+        //  border: 2px solid black;
+        // min-width: 250px;
+        
+        line-height: 155%;
+        font-size: 12px;
+        
+       
+  
+      }
+    }
+  
+  
+  
+  }
+}
   
   
