@@ -9,7 +9,7 @@
   /* Titre du logement */
   .fiche-logement-title {
     color: rgb(255,96,96);
-    font-size: 34px;
+    font-size: 36px;
     font-weight: 500;
       // border: 2px solid red;
     // margin-left: 155px;
@@ -22,7 +22,7 @@
   .fiche-logement-location {
     color: rgb(255,96,96);
       
-     font-size: 22px;
+     font-size: 18px;
     // border: 2px solid red;
      font-weight: 500;
      
@@ -68,11 +68,12 @@
     .host-name {
       color: rgb(253, 96, 102);
       font-weight: 500;
-      font-size: 21px;
-      //  border: 2px solid black;
-      margin-right: 7px;
+      font-size: 18px;
+      // border: 2px solid black;
+      padding-right: 8px;
       // min-width: 90px;
-      // width: 50px;
+       width: 75px;
+      text-align: end;
       
       
      
