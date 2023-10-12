@@ -72,13 +72,13 @@ function FicheLogement() {
               <div className="title-location-container">
                 <h1 className="fiche-logement-title">{logement.title}</h1>
                 <p className="fiche-logement-location">{logement.location}</p>
-              </div>
-              <div className="tags-container">
-                {logement.tags.map((tag, index) => (
-                  <div key={index} className="tag">
-                    {tag}
-                  </div>
-                ))}
+                <div className="tags-container">
+                  {logement.tags.map((tag, index) => (
+                    <div key={index} className="tag">
+                      <p>{tag}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -118,6 +118,7 @@ function FicheLogement() {
               <Collapse
                 title="Équipements"
                 content={
+                  
                   <ul>
                     {logement.equipments.map((equipment, index) => (
                       <li key={index}>{equipment}</li>
