@@ -29,7 +29,7 @@ function Collapse({ title, content, pageName }) {
         </button>
       </div>
       <div className={`collapse-content ${pageName}-collapse-content`}>
-  <p>{content}</p>
+  {content}
 </div>
 
     </div>
