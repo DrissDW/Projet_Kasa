@@ -37,7 +37,6 @@ function generateStarRating(rating) {
   return ratingStars;
 }
 
-
 function FicheLogement() {
   const { id: logementId } = useParams();
   const [logement, setLogement] = useState(null);
@@ -73,13 +72,13 @@ function FicheLogement() {
               <div className="title-location-container">
                 <h1 className="fiche-logement-title">{logement.title}</h1>
                 <p className="fiche-logement-location">{logement.location}</p>
-                <div className="tags-container">
-                  {logement.tags.map((tag, index) => (
-                    <div key={index} className="tag">
-                      <p>{tag}</p>
-                    </div>
-                  ))}
-                </div>
+              </div>
+              <div className="tags-container">
+                {logement.tags.map((tag, index) => (
+                  <div key={index} className="tag">
+                    {tag}
+                  </div>
+                ))}
               </div>
             </div>
 
