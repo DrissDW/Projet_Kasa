@@ -1,164 +1,136 @@
 /* FicheLogement container */
 .fiche-logement {
   // border: 2px solid blue;
-    max-width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Titre du logement */
+.fiche-logement-title {
+  color: rgb(255, 96, 96);
+  font-size: 36px;
+  font-weight: 500;
+  // border: 2px solid red;
+  // margin-left: 155px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.fiche-logement-location {
+  color: rgb(255, 96, 96);
+
+  font-size: 18px;
+  // border: 2px solid red;
+  font-weight: 500;
+
+  margin-bottom: 30px;
+}
+
+.tags-container {
+  //  border: 2px solid red;
+  display: flex;
+  // justify-content: space-between;
+  max-width: 650px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+
+  .tag {
+    // border: 2px solid black;
+    background-color: rgb(255, 96, 96);
+    color: white;
+    border-radius: 10px;
+    padding: 0px 21px;
+    margin-right: 15px;
+    // max-width: 115px;
+    height: 25px;
+    padding-top: 4px;
   }
-  
-  /* Titre du logement */
-  .fiche-logement-title {
-    color: rgb(255,96,96);
-    font-size: 36px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  // border: 2px solid red;
+  margin-bottom: 45px;
+  // width: 150px;
+
+  .host-name {
+    color: rgb(253, 96, 102);
     font-weight: 500;
-      // border: 2px solid red;
-    // margin-left: 155px;
-    margin-bottom: 2px;
-    margin-top: 0px;
-    padding-top: 10px;
-   
+    font-size: 18px;
+    // border: 2px solid black;
+    padding-right: 8px;
+    // min-width: 90px;
+    width: 75px;
+    text-align: end;
   }
 
-  .fiche-logement-location {
-    color: rgb(255,96,96);
-      
-     font-size: 18px;
-    // border: 2px solid red;
-     font-weight: 500;
-     
-    margin-bottom:30px ;
-  }
+  .host-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
 
-  .tags-container{
-    //  border: 2px solid red;
-    display: flex;
-    // justify-content: space-between;
-    max-width: 650px;
-    margin-bottom: 30px;
-    
-     font-size: 14px;
-
-    .tag{
-        // border: 2px solid black;
-      background-color: rgb(255,96,96);
-      color: white;
-      border-radius: 10px;
-      padding: 0px 21px;
-      margin-right: 15px;
-      // max-width: 115px;
-      height: 25px;
-      padding-top: 4px;
-    }
-
-   
-  }
-  
-  
- 
-  
-
-
-  .host {
-    display: flex;
-    align-items: center;
-    // border: 2px solid red;
-    margin-bottom: 45px;
-    // width: 150px;
-    
-
-
-    
-    .host-name {
-      color: rgb(253, 96, 102);
-      font-weight: 500;
-      font-size: 18px;
-      // border: 2px solid black;
-      padding-right: 8px;
-      // min-width: 90px;
-       width: 75px;
-      text-align: end;
-      
-      
-     
-      
-
-      
-     
-    }
-  
-    .host-circle {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      overflow: hidden;
-      
-      .host-picture {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    .host-picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
+}
 
-  .global-container {
-    // border: 4px solid green;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-  }
-  
-  .title-location-tags-container{
-    display: flex;
-    flex-direction: space-between;
-    // border: 2px solid blue;
-    
-  }
+.global-container {
+  // border: 4px solid green;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
 
-  .host-rating-container{
-    //  border: 2px solid blue;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
+.title-location-tags-container {
+  display: flex;
+  flex-direction: space-between;
+  // border: 2px solid blue;
+}
 
-  
-    .star-image {
-      // border: 2px solid red;
-     
-      margin-right: 8px;
-    }
-
-    .red-star {
-      
-      width: 24px; 
-      height: 24px;
-      
-    }
-    
-    .grey-star {
-      
-      width: 24px; 
-      height: 24px;
-      
-    }
-  
- 
-  
-
- //RESPONSIVE MOBILE
-@media(max-width:768px){
-
-  /* FicheLogement container */
-.fiche-logement {
+.host-rating-container {
   //  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.star-image {
+  // border: 2px solid red;
+
+  margin-right: 8px;
+}
+
+.red-star {
+  width: 24px;
+  height: 24px;
+}
+
+.grey-star {
+  width: 24px;
+  height: 24px;
+}
+
+//RESPONSIVE MOBILE
+@media (max-width: 768px) {
+  /* FicheLogement container */
+  .fiche-logement {
+    //  border: 2px solid blue;
     width: 335px;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   /* Titre du logement */
   .fiche-logement-title {
-    color: rgb(255,96,96);
+    color: rgb(255, 96, 96);
     font-size: 18px;
     font-weight: 500;
     // border: 2px solid red;
@@ -166,58 +138,50 @@
     margin-bottom: 10px;
     margin-top: 0px;
     padding-top: 0px;
-   
   }
 
   .fiche-logement-location {
-    color: rgb(255,96,96);
-      
-     font-size: 14px;
+    color: rgb(255, 96, 96);
+
+    font-size: 14px;
     //  border: 2px solid red;
-     font-weight: 500;
-     
-    margin-bottom:10px ;
+    font-weight: 500;
+
+    margin-bottom: 10px;
   }
 
-  .tags-container{
+  .tags-container {
     //  border: 2px solid red;
     display: flex;
     // justify-content: space-between;
     width: 290px;
     margin-bottom: 14px;
-    
-     font-size: 10px;
 
-    .tag{
+    font-size: 10px;
+
+    .tag {
       //  border: 2px solid black;
-      background-color: rgb(255,96,96);
+      background-color: rgb(255, 96, 96);
       color: white;
       border-radius: 10px;
-      padding-top:0px;
+      padding-top: 0px;
       padding-bottom: 0px;
       padding-left: 8px;
-      padding-right: 8px; 
+      padding-right: 8px;
       margin-right: 15px;
       // max-width: 115px;
       height: 18px;
       padding-top: 4px;
     }
   }
-  
- 
-  
-
 
   .host {
     display: flex;
     align-items: center;
     // border: 2px solid red;
-     margin-bottom:5px;
+    margin-bottom: 5px;
     // width: 150px;
-    
 
-
-    
     .host-name {
       color: rgb(253, 96, 102);
       font-weight: 500;
@@ -225,23 +189,16 @@
       // border: 2px solid black;
       padding-right: 8px;
       // min-width: 90px;
-       width: 55px;
+      width: 55px;
       text-align: right;
-      
-      
-     
-      
-
-      
-     
     }
-  
+
     .host-circle {
       width: 32px;
       height: 32px;
       border-radius: 50%;
       overflow: hidden;
-      
+
       .host-picture {
         width: 100%;
         height: 100%;
@@ -256,15 +213,14 @@
     justify-content: space-between;
     margin-top: 5px;
   }
-  
-  .title-location-tags-container{
+
+  .title-location-tags-container {
     display: flex;
     flex-direction: space-between;
     //  border: 2px solid blue;
-    
   }
 
-  .host-rating-container{
+  .host-rating-container {
     //  border: 2px solid blue;
     display: flex;
     flex-direction: row-reverse;
@@ -272,44 +228,27 @@
     justify-content: space-between;
     padding: 0px;
     margin-bottom: 12px;
-    
-    
   }
 
-  .rating-container{
+  .rating-container {
     //  border: 2px solid pink;
     margin-top: 5px;
     height: 22px;
-    
   }
 
-  
-    .star-image {
-      //  border: 2px solid red;
-      
-       
-      margin-right: 8px;
-    }
+  .star-image {
+    //  border: 2px solid red;
 
-    .red-star {
-      
-      width: 13px; 
-      height: 13px;
-      
-    }
-    
-    .grey-star {
-     
-      width: 13px; 
-      height: 13px;
-      
-    }
-  
-  
- 
+    margin-right: 8px;
+  }
 
+  .red-star {
+    width: 13px;
+    height: 13px;
+  }
+
+  .grey-star {
+    width: 13px;
+    height: 13px;
+  }
 }
- 
-  
-
-  

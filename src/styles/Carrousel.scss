@@ -5,7 +5,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240px; 
+  max-width: 1240px;
   height: 415px;
   position: relative;
   overflow: hidden;
@@ -65,30 +65,23 @@
 //RESPONSIVE MOBILE
 @media (max-width: 768px) {
   .carrousel {
-    width: 335px; 
-    height: 255px; 
+    width: 335px;
+    height: 255px;
   }
 
   .carrousel-button {
-    width: 33px; 
+    width: 33px;
   }
 
   .carrousel-button.left {
-    left: 0px; 
+    left: 0px;
   }
 
   .carrousel-button.right {
-    right: 0px; 
+    right: 0px;
   }
 
   .pagination {
-    display: none; 
+    display: none;
   }
 }
-
-
-
-
-  
-
-  

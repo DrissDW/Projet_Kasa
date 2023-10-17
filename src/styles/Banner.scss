@@ -1,149 +1,100 @@
 //HOME BANNER
 .banner-home {
-  background-image: url('../assets/Banner-image.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 223px; 
+  background-image: url("../assets/Banner-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 223px;
+  border-radius: 15px;
+  // provisoire
+  margin-bottom: 39px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    //   border: 2px solid red;
+    border-radius: 15px;
+  }
+
+  .banner__title {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+  }
+}
+
+//RESPONSIVE MOBILE
+
+@media (max-width: 768px) {
+  .banner-home {
+    background-image: url("../assets/Banner-image.png");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    height: 111px;
     border-radius: 15px;
     // provisoire
-    margin-bottom: 39px; 
-    max-width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 39px;
+    width: 335px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // border: 2px solid blue;
 
-   
-  
     .banner__content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.4); 
-    //   border: 2px solid red;
+      background-color: rgba(0, 0, 0, 0.4);
+      //  border: 2px solid red;
       border-radius: 15px;
     }
-  
+
     .banner__title {
       color: #fff;
-      font-size: 48px;
-      text-align: center;
-      padding: 20px;
+      font-size: 24px;
+      text-align: left;
+      // padding: 20px;
       font-weight: 400;
     }
   }
+}
 
-  //RESPONSIVE MOBILE 
-
-  @media (max-width: 768px) {
-
-    .banner-home {
-      background-image: url('../assets/Banner-image.png'); 
-        // background-size: cover;
-        // background-position: center;
-        // background-repeat: no-repeat;
-        height: 111px; 
-        border-radius: 15px;
-        // provisoire
-        margin-bottom: 39px; 
-        width: 335px;
-        // margin-left: auto;
-        // margin-right: auto;
-        // border: 2px solid blue;
-        
-    
-       
-      
-        .banner__content {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.4); 
-          //  border: 2px solid red;
-          border-radius: 15px;
-        }
-      
-        .banner__title {
-          color: #fff;
-          font-size: 24px;
-          text-align: left;
-          // padding: 20px;
-          font-weight: 400;
-        }
-      }
-
-
-  }
-
-
-  //ABOUT BANNER
-  .banner-about {
-      background-image: url('../assets/Banner-about.png'); 
-      background-size: cover; 
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 230px; 
-      border-radius: 15px;
-      margin-bottom: 39px; 
-      max-width: 1240px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 30px;
-      // border: 2px solid red;
-    
-    
-  
-    .banner__content {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
-        height: 100%;
-       
-       
-      background-color: rgba(0, 0, 0, 0.4); 
-      // border: 1px solid green;
-       border-radius: 15px;
-    }
-  
-    .banner__title {
-      display: none;
-    }
-  }
-  
-  //RESPONSIVE ABOUT MOBILE
-@media(max-width:768px){
-  .banner-about {
-    background-image: url('../assets/Banner-about.png'); 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 230px; 
-    border-radius: 15px;
-    margin-bottom: 25px; 
-    width: 335px;
-    height: 111px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    // border: 2px solid red;
-  
-  
+//ABOUT BANNER
+.banner-about {
+  background-image: url("../assets/Banner-about.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 230px;
+  border-radius: 15px;
+  margin-bottom: 39px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  // border: 2px solid red;
 
   .banner__content {
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
     // align-items: center;
-      height: 100%;
-     
-     
-    background-color: rgba(0, 0, 0, 0.4); 
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
     // border: 1px solid green;
-     border-radius: 15px;
+    border-radius: 15px;
   }
 
   .banner__title {
@@ -151,5 +102,37 @@
   }
 }
 
+//RESPONSIVE ABOUT MOBILE
+@media (max-width: 768px) {
+  .banner-about {
+    background-image: url("../assets/Banner-about.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    width: 335px;
+    height: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    // border: 2px solid red;
 
+    .banner__content {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.4);
+      // border: 1px solid green;
+      border-radius: 15px;
+    }
+
+    .banner__title {
+      display: none;
+    }
+  }
 }
